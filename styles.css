@@ -1,0 +1,31 @@
+:root {
+    --width: 60px;
+    --height: 10px;
+    --hamburger-color: #D84282;
+}
+
+
+#menu {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--hamburger-color);
+    position: relative;
+    margin: 100px;
+}
+#menu::before,
+#menu::after {
+    content: "";
+    display: block;
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--hamburger-color);
+    position: absolute;
+}
+
+#menu::before {
+    top: -20px;
+}
+
+#menu::after {
+    top: 20px;
+}
